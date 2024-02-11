@@ -1,10 +1,13 @@
 * {
-  box-sizing: border-box; /*Legt fest wie die komplette Breite und Höhe von jedem Element berechnet wird, durch das Attribut border-box wird die border-width zu der größe der Box hinzugefügt*/
+  box-sizing: border-box;
+  /*Legt fest wie die komplette Breite und Höhe von jedem Element berechnet wird, durch das Attribut border-box wird die border-width zu der größe der Box hinzugefügt*/
 }
+
 body {
   margin: 0;
   font-family: "Monaco", Monospace;
 }
+
 ul.nav {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: small;
@@ -13,7 +16,8 @@ ul.nav {
   padding: 0;
   position: relative;
   width: 100%;
-  display: flex; /* alternatives box layout erlaubt dass alle li's nebeneinander sind und trotzdem die komplette breite ausfüllen*/
+  display: flex;
+  /* alternatives box layout erlaubt dass alle li's nebeneinander sind und trotzdem die komplette breite ausfüllen*/
 }
 
 .nav > li,
@@ -123,26 +127,31 @@ p {
   z-index: 10;
   height: 150px;
 }
+
 #boxLogo {
   position: absolute;
   right: 10%;
   top: 3%;
 }
+
 #boxAll {
   height: 95%;
   width: 95%;
   border: 2px solid white;
 }
+
 form {
   text-align: left;
   color: white;
   margin-top: 1%;
 }
+
 input {
   border: solid rgb(180, 72, 180) 5px;
   border-bottom-color: purple;
   border-right-color: purple;
 }
+
 h2 {
   color: white;
 }
@@ -153,12 +162,14 @@ h2 {
   overflow: hidden;
   z-index: -3;
   display: flex;
-  justify-content: center; /* zentriert alle kind elemente auf der x achse */
+  justify-content: center;
+  /* zentriert alle kind elemente auf der x achse */
 }
 
 #boxVid video {
   height: 100%;
 }
+
 #BoxForm form {
   font-size: 16px;
   position: absolute;
@@ -166,6 +177,7 @@ h2 {
   text-align: center;
   top: 10%;
 }
+
 table {
   color: white;
   border-left-color: violet;
@@ -173,6 +185,7 @@ table {
   border-top-color: magenta;
   border-right-color: magenta;
 }
+
 #BoxUnicorn {
   position: absolute;
   top: 25%;
@@ -180,6 +193,7 @@ table {
   float: left;
   left: 10%;
 }
+
 #BoxUnicorn2 {
   position: absolute;
   top: 48%;
@@ -187,6 +201,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxUnicorn3 {
   position: absolute;
   top: 100%;
@@ -194,6 +209,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxUnicorn4 {
   position: absolute;
   top: 130%;
@@ -201,6 +217,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxUnicorn5 {
   position: absolute;
   top: 160%;
@@ -208,6 +225,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxUnicorn6 {
   position: absolute;
   top: 190%;
@@ -215,6 +233,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxUnicorn7 {
   position: absolute;
   top: 220%;
@@ -222,6 +241,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxMouse {
   position: absolute;
   top: 250%;
@@ -229,6 +249,7 @@ table {
   float: left;
   left: 12%;
 }
+
 #BoxKeyboard2 {
   position: absolute;
   top: 280%;
@@ -236,6 +257,7 @@ table {
   float: left;
   left: 22%;
 }
+
 #BoxKeyboard {
   position: absolute;
   top: 75%;
@@ -243,6 +265,7 @@ table {
   float: left;
   left: 13%;
 }
+
 #BoxStunden {
   position: absolute;
   top: 20%;
@@ -251,39 +274,46 @@ table {
   left: 25%;
   right: 25%;
 }
+
 #BoxSteine {
   position: absolute;
   top: 30%;
   text-align: center;
   left: 17%;
 }
+
 #BoxSteine table {
   position: relative;
   left: 47%;
   border: 2px solid magenta;
   top: 40%;
 }
+
 #BoxSteine td {
   border: 2px solid magenta;
   margin: auto;
   font-size: 20px;
 }
+
 #BoxSteine h2 {
   position: relative;
   left: 50%;
   top: 20%;
   font-size: 30px;
 }
+
 #BoxSteine th {
   font-size: 40px;
   text-decoration: underline;
 }
+
 #BoxMaße {
   top: 30%;
   position: absolute;
   text-align: center;
   left: 23%;
 }
+
 #BoxMaße td {
   border: solid rgb(122, 90, 3) 5px;
   border-left-color: rgb(231, 185, 55);
@@ -291,6 +321,7 @@ table {
   font-size: 25px;
   color: rgb(192, 151, 192);
 }
+
 #BoxMaße th {
   font-size: 40px;
   border: solid rgb(122, 90, 3) 5px;
@@ -298,46 +329,87 @@ table {
   border-top-color: rgb(231, 185, 55);
   color: rgb(192, 151, 192);
 }
+
 #BoxFunktionen {
   top: 20%;
   position: absolute;
   text-align: center;
   left: 19%;
 }
+
 #BoxLinks {
   position: absolute;
   top: 30%;
   left: 27%;
 }
+
 #BoxLinks h2 {
   position: relative;
   left: 45%;
   color: white;
 }
+
 #BoxLinks a {
   float: left;
   width: 32%;
   margin-right: 2%;
   padding: 20px;
 }
+
+#BoxSoftware {
+  position: absolute;
+  text-align: center;
+  top: 110%;
+  left: 10%;
+}
+
+#BoxSoftware ul {
+  text-align: left;
+  color: white;
+}
+
+#BoxSoftware p {
+  text-align: left;
+  color: white;
+}
+
+#BoxSoftware h2 {
+  text-align: left;
+  color: white;
+}
+
+#BoxSoftware h3 {
+  text-align: left;
+  color: white;
+}
+
+#BoxSoftware a {
+  text-align: left;
+  color: white;
+}
+
 #Switches {
   position: absolute;
   top: 35%;
 }
+
 #Speaker {
   position: absolute;
   left: 90%;
   top: 17%;
 }
+
 #Prozessor {
   position: absolute;
   margin-top: 30%;
 }
+
 #Tinker {
   position: absolute;
   left: 58.2%;
   margin-top: 30%;
 }
+
 #BoxAbout {
   position: absolute;
   top: 30%;
@@ -345,6 +417,7 @@ table {
   left: 25%;
   text-align: center;
 }
+
 #Box3d td {
   border: solid rgb(102, 30, 102) 5px;
   border-left-color: rgb(180, 72, 180);
@@ -352,6 +425,7 @@ table {
   font-size: 25px;
   color: rgb(228, 209, 159);
 }
+
 #Box3d th {
   font-size: 40px;
   border: solid rgb(102, 30, 102) 5px;
@@ -359,6 +433,7 @@ table {
   border-top-color: rgb(180, 72, 180);
   color: rgb(228, 209, 159);
 }
+
 #Box3d {
   position: absolute;
   top: 30%;
