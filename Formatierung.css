@@ -1,298 +1,367 @@
-		* {
-			box-sizing: border-box;  /*Legt fest wie die komplette Breite und Höhe von jedem Element berechnet wird, durch das Attribut border-box wird die border-width zu der größe der Box hinzugefügt*/
-		}
-		body {
-			margin: 0;
-			font-family: "Monaco", Monospace;
-		}
-		ul.nav {
-			font-family: Verdana, Arial, Helvetica, sans-serif;
-			font-size: small;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			width: 100%;
-			display: flex; /* alternatives box layout erlaubt dass alle li's nebeneinander sind und trotzdem die komplette breite ausfüllen*/
-		}
+* {
+  box-sizing: border-box; /*Legt fest wie die komplette Breite und Höhe von jedem Element berechnet wird, durch das Attribut border-box wird die border-width zu der größe der Box hinzugefügt*/
+}
+body {
+  margin: 0;
+  font-family: "Monaco", Monospace;
+}
+ul.nav {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: small;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  display: flex; /* alternatives box layout erlaubt dass alle li's nebeneinander sind und trotzdem die komplette breite ausfüllen*/
+}
 
-		.nav > li, h1 {
-			margin: 5px;
-		}
+.nav > li,
+h1 {
+  margin: 5px;
+}
 
-		li {
-			background-color: black;
-			float: left;
-			padding: .5em 0;
-			position: relative;
-			width: 100%;
-		}
+li {
+  background-color: black;
+  float: left;
+  padding: 0.5em 0;
+  position: relative;
+  width: 100%;
+}
 
-		li a {
-			color: white;
-			text-decoration: none;
-		}
+li a {
+  color: white;
+  text-decoration: none;
+}
 
-		li a[href="#"] {
-			font-weight: 700;
-			text-transform: uppercase;
-			text-align: center;
-		}
+li a[href="#"] {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-		li ul {
-			display: none;
-			left: 0;
-			position: absolute;
-			padding: 0;
-			top: 2.3em;
-			width: 100%;
-		}
+li ul {
+  display: none;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  top: 2.3em;
+  width: 100%;
+}
 
-		li ul li {
-			transition: all 0.25s;
-			margin: 0;
-		}
+li ul li {
+  transition: all 0.25s;
+  margin: 0;
+}
 
-		li ul li:hover {
-			background-color: white;
-			padding: 10px 0;
-		}
+li ul li:hover {
+  background-color: white;
+  padding: 10px 0;
+}
 
-		li ul li:hover a {
-			color: black;
-		}
+li ul li:hover a {
+  color: black;
+}
 
-		li:hover ul {
-			display: block;
-		}
+li:hover ul {
+  display: block;
+}
 
-		
+.nav > li,
+.nav li ul,
+h1 {
+  border: solid rgb(180, 72, 180) 5px;
+  border-left-color: rgb(231, 185, 55);
+  border-top-color: rgb(231, 185, 55);
+}
 
-		.nav > li, .nav li ul, h1 {
-			border: solid rgb(180, 72, 180) 5px;
-			border-left-color: rgb(231,185,55);
-			border-top-color: rgb(231,185,55);
-		}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Impact", Monospace;
+  font-size: 100px;
+  margin: auto;
+  width: 100%;
+  height: 125px;
+}
 
-		h1 {
-			text-align: center;
-			color: white;
-			font-family: "Impact", Monospace;
-			font-size: 100px;
-			margin: auto;
-			width: 100%;
-			height: 125px;
-		}
+body {
+  background-color: black;
+}
 
-		body {
-			background-color: black;
-		}
+font {
+  color: white;
+  font-size: 20px;
+}
 
-		font {
-			color: white;
-			font-size: 20px;
-		}
-      
-      p {color: white;
-         text-align: center;
-		 margin: auto;
-		 width: 50%;
+p {
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
 
-		}
+.header {
+  position: relative;
+}
 
-		.header {
-			position: relative;
-		}
+.header img {
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  height: 80%;
+  margin: auto;
+}
 
-		.header img {
-			position: absolute;
-			top: 2px;
-			bottom: 0;
-			height: 80%;
-			margin: auto;
-		}
+#boxH {
+  text-align: center;
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  background-color: black;
+  z-index: 10;
+  height: 150px;
+}
+#boxLogo {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+}
+#boxAll {
+  height: 95%;
+  width: 95%;
+  border: 2px solid white;
+}
+form {
+  text-align: left;
+  color: white;
+  margin-top: 1%;
+}
+input {
+  border: solid rgb(180, 72, 180) 5px;
+  border-bottom-color: purple;
+  border-right-color: purple;
+}
+h2 {
+  color: white;
+}
 
-		#boxH {
-			text-align: center;
-			position: fixed;
-			left: 10px;
-			right: 10px;
-			top: 10px;
-			background-color: black;
-			z-index: 10;
-			height: 150px;
-		}
-		#boxLogo {position: absolute;
-		          right: 10%;
-				  top: 3%;}
-	    #boxAll {height: 95%;
-		         width: 95%;
-				border: 2px solid white;}
-		    form {text-align: left; color: white; margin-top: 1%}
-    input {border: solid rgb(180, 72, 180) 5px;
-			border-bottom-color: purple;
-			border-right-color: purple;}
-    h2 {color: white;}
-    
-		#boxVid {
-			width: 100vw;
-			height: 100vh;
-			overflow: hidden;
-			z-index: -3;
-			display: flex;
-			justify-content: center; /* zentriert alle kind elemente auf der x achse */
-		}
+#boxVid {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -3;
+  display: flex;
+  justify-content: center; /* zentriert alle kind elemente auf der x achse */
+}
 
-		#boxVid video {
-			height: 100%;
-		}
-	  #BoxForm form {font-size: 16px;
-	            position: absolute;	           
-	            left: 20%;
-	            text-align: center;
-				   top: 10%;
-	            }
-	  table {color:white;
-               border-left-color:violet;
-               border-bottom-color:violet;
-               border-top-color:magenta;
-               border-right-color:magenta;}
-     #BoxUnicorn {position: absolute;
-                  top: 25%;
-                  height: 30%;
-                  float: left;
-				  left: 10%;
-                  }
-     #BoxUnicorn2 {position: absolute;
-                  top: 48%;
-                  height: 30%;
-                  float: left;
-				  left: 22%;
-                  }
-         #BoxUnicorn3 {position: absolute;
-     					top:100%;
-     					height: 30%;
-     					float:left;
-     					left:22%;}
-     		#BoxUnicorn4  {position: absolute;
-     		               top: 130%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 22%}
-     			#BoxUnicorn5  {position: absolute;
-     		               top: 160%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 22%}
-     		   	#BoxUnicorn6  {position: absolute;
-     		               top: 190%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 22%}
-     		               	#BoxUnicorn7  {position: absolute;
-     		               top: 220%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 22%}
-     		               #BoxMouse  {position: absolute;
-     		               top: 250%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 12%}
-     		               #BoxKeyboard2  {position: absolute;
-     		               top: 280%;
-     		               height: 30%;
-     		               float: left;
-     		               left: 22%}
-       #BoxKeyboard {position: absolute;
-                  top: 75%;
-                  height: 30%;
-                  float: left;
-				  left: 13%;
-                  }
-		#BoxStunden  {position: absolute;
-			        top: 20%;
-				    text-align: center;
-					margin: auto;
-					left: 25%;
-					right: 25%;
-				    ;}
-		#BoxSteine {position: absolute;
-			top: 30%;
-			text-align: center;
-			left: 17%;
-			}
-			#BoxSteine table {position: relative;
-				                   left: 47%;
-								    border: 2px solid magenta;
-								top: 40%}
-			#BoxSteine td {border:2px solid magenta;
-			margin: auto; 
-		font-size: 20px;}
-		#BoxSteine h2 {position: relative;
-		                    left: 50%;
-						top: 20%;
-					font-size: 30px;}
-		#BoxSteine th {font-size: 40px;
-		text-decoration: underline;}
-		#BoxMaße {top: 30%;
-		             position: absolute;
-					 text-align: center;
-					 left: 23%;}
-		#BoxMaße td {border: solid rgb(122, 90, 3) 5px;
-			border-left-color: rgb(231,185,55);
-			border-top-color: rgb(231,185,55);
-			font-size: 25px;
-			color: rgb(192, 151, 192);
-			            
-		                         }
-		#BoxMaße th {font-size: 40px;
-			border: solid rgb(122, 90, 3) 5px;
-			border-left-color: rgb(231,185,55);
-			border-top-color: rgb(231,185,55);
-		    color: rgb(192, 151, 192);}
-		#BoxFunktionen  {top: 20%;
-		                   position: absolute;
-						   text-align: center;
-						   left: 19%;
-						}
-		#BoxLinks  {position: absolute;
-		top: 30%;
-		left: 27%}
-		#BoxLinks h2 {position: relative;
-                      left:45%;
-					  color: white;
-		           }
-		#BoxLinks a { float: left; width: 32%; margin-right: 2%; padding: 20px;
-		}
-		#Switches {position: absolute;
-		           top: 35%;}
-		#Speaker{position: absolute;
-		         left: 90%;
-				 top: 17%;}
-		#Prozessor {position: absolute;
-		            margin-top: 30%;}
-		#Tinker {position: absolute;
-		         left: 58.2%;
-				 margin-top: 30%;}
-		#BoxAbout {position: absolute;
-			top: 30%;
-		    width: 50%;
-		    left: 25%;
-		text-align: center;}
-		#Box3d td {border: solid rgb(102, 30, 102) 5px;
-			border-left-color: rgb(180, 72, 180);
-			border-top-color: rgb(180, 72, 180);
-			font-size: 25px;
-			color: rgb(228, 209, 159);
-			            
-		                         }
-		#Box3d th {font-size: 40px;
-			border: solid rgb(102, 30, 102) 5px;
-			border-left-color: rgb(180, 72, 180);
-			border-top-color: rgb(180, 72, 180);
-		    color: rgb(228, 209, 159);}
-		#Box3d {position: absolute;
-		        top: 30%;
-			    text-align: center;
-			    left: 18%;}
+#boxVid video {
+  height: 100%;
+}
+#BoxForm form {
+  font-size: 16px;
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  top: 10%;
+}
+table {
+  color: white;
+  border-left-color: violet;
+  border-bottom-color: violet;
+  border-top-color: magenta;
+  border-right-color: magenta;
+}
+#BoxUnicorn {
+  position: absolute;
+  top: 25%;
+  height: 30%;
+  float: left;
+  left: 10%;
+}
+#BoxUnicorn2 {
+  position: absolute;
+  top: 48%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxUnicorn3 {
+  position: absolute;
+  top: 100%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxUnicorn4 {
+  position: absolute;
+  top: 130%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxUnicorn5 {
+  position: absolute;
+  top: 160%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxUnicorn6 {
+  position: absolute;
+  top: 190%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxUnicorn7 {
+  position: absolute;
+  top: 220%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxMouse {
+  position: absolute;
+  top: 250%;
+  height: 30%;
+  float: left;
+  left: 12%;
+}
+#BoxKeyboard2 {
+  position: absolute;
+  top: 280%;
+  height: 30%;
+  float: left;
+  left: 22%;
+}
+#BoxKeyboard {
+  position: absolute;
+  top: 75%;
+  height: 30%;
+  float: left;
+  left: 13%;
+}
+#BoxStunden {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  margin: auto;
+  left: 25%;
+  right: 25%;
+}
+#BoxSteine {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  left: 17%;
+}
+#BoxSteine table {
+  position: relative;
+  left: 47%;
+  border: 2px solid magenta;
+  top: 40%;
+}
+#BoxSteine td {
+  border: 2px solid magenta;
+  margin: auto;
+  font-size: 20px;
+}
+#BoxSteine h2 {
+  position: relative;
+  left: 50%;
+  top: 20%;
+  font-size: 30px;
+}
+#BoxSteine th {
+  font-size: 40px;
+  text-decoration: underline;
+}
+#BoxMaße {
+  top: 30%;
+  position: absolute;
+  text-align: center;
+  left: 23%;
+}
+#BoxMaße td {
+  border: solid rgb(122, 90, 3) 5px;
+  border-left-color: rgb(231, 185, 55);
+  border-top-color: rgb(231, 185, 55);
+  font-size: 25px;
+  color: rgb(192, 151, 192);
+}
+#BoxMaße th {
+  font-size: 40px;
+  border: solid rgb(122, 90, 3) 5px;
+  border-left-color: rgb(231, 185, 55);
+  border-top-color: rgb(231, 185, 55);
+  color: rgb(192, 151, 192);
+}
+#BoxFunktionen {
+  top: 20%;
+  position: absolute;
+  text-align: center;
+  left: 19%;
+}
+#BoxLinks {
+  position: absolute;
+  top: 30%;
+  left: 27%;
+}
+#BoxLinks h2 {
+  position: relative;
+  left: 45%;
+  color: white;
+}
+#BoxLinks a {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  padding: 20px;
+}
+#Switches {
+  position: absolute;
+  top: 35%;
+}
+#Speaker {
+  position: absolute;
+  left: 90%;
+  top: 17%;
+}
+#Prozessor {
+  position: absolute;
+  margin-top: 30%;
+}
+#Tinker {
+  position: absolute;
+  left: 58.2%;
+  margin-top: 30%;
+}
+#BoxAbout {
+  position: absolute;
+  top: 30%;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+}
+#Box3d td {
+  border: solid rgb(102, 30, 102) 5px;
+  border-left-color: rgb(180, 72, 180);
+  border-top-color: rgb(180, 72, 180);
+  font-size: 25px;
+  color: rgb(228, 209, 159);
+}
+#Box3d th {
+  font-size: 40px;
+  border: solid rgb(102, 30, 102) 5px;
+  border-left-color: rgb(180, 72, 180);
+  border-top-color: rgb(180, 72, 180);
+  color: rgb(228, 209, 159);
+}
+#Box3d {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  left: 18%;
+}
